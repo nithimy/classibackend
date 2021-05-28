@@ -1,5 +1,6 @@
-require('dotenv').config();
-import mysql from "mysql2";
+// require('dotenv').config();
+// import mysql from "mysql2";
+const mysql = require("mysql");
 
 let connection = mysql.createConnection({
     host: "us-cdbr-east-03.cleardb.com",
