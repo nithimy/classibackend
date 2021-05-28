@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node server.js"
+    "start": "npm start"
   },
   "author": "hary pham",
   "license": "ISC",
@@ -31,8 +31,8 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.3",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "nodemon": "^2.0.7"
+    "babel-preset-env": "^1.7.0"
   }
 }
