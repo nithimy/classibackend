@@ -59,6 +59,7 @@ const upload = multer({
         fileSize: 1024 * 1024 * 10
     }
 })
+
 app.use('/profile', express.static('upload/images'));
 app.post("/api/uploadprofile", upload.single('image'), (req, res) => {
     let id = req.body.id;
@@ -161,6 +162,6 @@ let PORT = process.env.PORT || 3000;
 // {console.log(`Building a login system with NodeJS is running on port ${PORT}!`);
 // };
 
-app.listen(PORT || 5000 , () => {
+app.listen(PORT || 5000 , "0.0.0.0",() => {
     console.log(`Server running on port ${PORT}`);
 });
