@@ -8,8 +8,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "npm start"
+    "start": "npm server.js"
   },
   "author": "hary pham",
   "license": "ISC",
