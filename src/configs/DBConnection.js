@@ -1,5 +1,5 @@
 // require('dotenv').config();
-// import mysql from "mysql2";
+import mysql from "mysql2";
 const mysql = require("mysql");
 
 let connection = mysql.createConnection({
