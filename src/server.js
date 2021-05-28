@@ -62,7 +62,7 @@ const upload = multer({
 app.use('/profile', express.static('upload/images'));
 app.post("/api/uploadprofile", upload.single('image'), (req, res) => {
     let id = req.body.id;
-    let image = `http://localhost:3000/profile/${req.file.filename}`;
+    let image = `https://classibackend.herokuapp.com/profile/${req.file.filename}`;
 
     if (!id) {
         res.status(400).send({ error: true, message: 'Please give your id to upload your profile picture' });
@@ -83,7 +83,7 @@ app.post("/api/uploadprofile", upload.single('image'), (req, res) => {
 app.use('/classpic', express.static('upload/images'));
 app.post("/api/uploadclassprofile", upload.single('image'), (req, res) => {
     let id = req.body.id;
-    let image = `http://localhost:3000/classpic/${req.file.filename}`;
+    let image = `https://classibackend.herokuapp.com/classpic/${req.file.filename}`;
 
     if (!id) {
         res.status(400).send({ error: true, message: 'Please provide class id to upload your profile picture' });
@@ -104,7 +104,7 @@ app.post("/api/uploadclassprofile", upload.single('image'), (req, res) => {
 app.use('/postpic', express.static('upload/images'));
 app.post("/api/uploadpostpic", upload.single('image'), (req, res) => {
     let id = req.body.id;
-    let image = `http://localhost:3000/postpic/${req.file.filename}`;
+    let image = `https://classibackend.herokuapp.com/postpic/${req.file.filename}`;
 
     if (!id) {
         res.status(400).send({ error: true, message: 'Please give POST ID to upload your picture' });
@@ -125,7 +125,7 @@ app.post("/api/uploadpostpic", upload.single('image'), (req, res) => {
 app.use('/commentpic', express.static('upload/images'));
 app.post("/api/uploadcommentpic", upload.single('image'), (req, res) => {
     let id = req.body.id;
-    let image = `http://localhost:3000/commentpic/${req.file.filename}`;
+    let image = `https://classibackend.herokuapp.com/commentpic/${req.file.filename}`;
 
     if (!id) {
         res.status(400).send({ error: true, message: 'Please give COMMENT ID to upload your picture' });
