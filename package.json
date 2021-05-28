@@ -1,12 +1,12 @@
 {
-  "name": "tutorial-youtube",
+  "name": "classi",
   "version": "1.0.0",
   "description": "Building a login system with NodeJS",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
+    "start": "nodemon --exec babel-node server.js"
   },
   "author": "hary pham",
   "license": "ISC",
