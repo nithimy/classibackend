@@ -2,10 +2,10 @@ require('dotenv').config();
 import mysql from "mysql2";
 
 let connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    host: "us-cdbr-east-03.cleardb.com",
+    user: "b57d3e74fb8377",
+    password: "7fad4843",
+    database: "heroku_68878ccdd651069"
 });
 
 connection.connect(function(err) {
@@ -14,3 +14,5 @@ connection.connect(function(err) {
 });
 
 module.exports = connection;
+
+// mysql://b57d3e74fb8377:7fad4843@us-cdbr-east-03.cleardb.com/heroku_68878ccdd651069?reconnect=true
