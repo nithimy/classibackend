@@ -8,8 +8,11 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "npm start",
-    "test": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "npm start"
+    "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
+  // "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
+  "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies."
   },
   "author": "hary pham",
   "license": "ISC",
